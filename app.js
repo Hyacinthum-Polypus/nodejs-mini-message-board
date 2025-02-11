@@ -9,6 +9,8 @@ app.set("view engine", "ejs")
 const assetsPath = path.join(__dirname, "public")
 app.use(express.static(assetsPath))
 
+app.use(express.urlencoded({ extended: true }))
+
 const messages = [
     {
         text: "Hi there!",
@@ -29,6 +31,16 @@ app.get("/", (req, res) => {
 
 app.get("/new", (req, res) => {
     res.render("form")
+})
+
+app.post("/new", (req, res) => {
+    messages.push({
+        text: req.body.text,
+        user: req.body.user,
+        added: new Date()
+    })
+
+    res.redirect("/")
 })
 
 const port = 3000;
