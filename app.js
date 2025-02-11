@@ -27,6 +27,10 @@ app.get("/", (req, res) => {
     res.render("index", { title:"Mini Messageboard", messages: messages })
 })
 
+app.get("/new", (req, res) => {
+    res.render("form")
+})
+
 const port = 3000;
 app.listen(port, () => {
     console.log(`Express is now listening on ${port}`)
