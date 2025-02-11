@@ -1,0 +1,1 @@
+This is a simple project following the [mini message board](https://www.theodinproject.com/lessons/node-path-nodejs-mini-message-board) project from the NodeJS course on [The Odin Project](https://theodinproject.com/about).
