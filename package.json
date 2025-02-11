@@ -16,5 +16,9 @@
     "url": "https://github.com/Hyacinthum-Polypus/nodejs-mini-message-board/issues"
   },
   "homepage": "https://github.com/Hyacinthum-Polypus/nodejs-mini-message-board#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
 }

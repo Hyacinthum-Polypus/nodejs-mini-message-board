@@ -24,7 +24,7 @@ const messages = [
 
 
 app.get("/", (req, res) => {
-    //res.render("index", { links: links, users: users })
+    res.render("index", { title:"Mini Messageboard", messages: messages })
 })
 
 const port = 3000;

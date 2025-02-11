@@ -1,0 +1,5 @@
+<li>
+    <p class="message-username"><%= message.user %></p>
+    <p class="message-datetime">Published <time datetime="<%= message.added.toISOString() %>"><%= message.added.toDateString() %></time></p>
+    <p class="message-text"><%= message.text %></p>
+</li>
